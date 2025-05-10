@@ -59,19 +59,6 @@ class LibroInfantil extends Libro {
         this.edadMinima = edadMinima;
     }
 }
-
-// Instancias y pruebas
-const biblioteca = new Biblioteca();
-const libro1 = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943);
-const libro2 = new Libro("Cien años de soledad", "Gabriel García Márquez", 1967);
-const libro3 = new LibroInfantil("Harry Potter y la piedra filosofal", "J.K. Rowling", 1997, 8);
-const libro4 = new LibroInfantil("El jardín secreto", "Frances Hodgson Burnett", 1911, 6);
-
-biblioteca.agregarLibro(libro1);
-biblioteca.agregarLibro(libro2);
-biblioteca.agregarLibro(libro3);
-biblioteca.agregarLibro(libro4);
-
 // Funciones conectadas al HTML
 function mostrarLibros() {
     const lista = document.getElementById("listaLibros");
@@ -99,3 +86,14 @@ function prestarLibro() {
     document.getElementById("resultadoPrestamo").textContent = mensaje;
     mostrarLibros();
 }
+//ejemplo de uso
+biblioteca.prestarLibro("El Principito");
+biblioteca.prestarLibro("Harry Potter y la piedra filosofal");
+biblioteca.prestarLibro("Cien años de soledad");
+biblioteca.prestarLibro("El jardín secreto");
+// Mostrar todos los libros
+biblioteca.mostrarLibros();
+// Prestar un libro
+biblioteca.prestarLibro("El Principito");
+
+
