@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Biblioteca</title>
+</head>
+<body>
+    <h1>Biblioteca Virtual</h1>
+
+    <h2>Libros Disponibles</h2>
+    <button onclick="mostrarLibros()">Mostrar todos</button>
+    <ul id="listaLibros"></ul>
+
+    <h2>Buscar por Título</h2>
+    <input type="text" id="inputBuscar" placeholder="Ingresa título">
+    <button onclick="buscarLibro()">Buscar</button>
+    <p id="resultadoBusqueda"></p>
+
+    <h2>Prestar Libro</h2>
+    <input type="text" id="inputPrestar" placeholder="Título del libro">
+    <button onclick="prestarLibro()">Prestar</button>
+    <p id="resultadoPrestamo"></p>
+
+    <script src="biblioteca.js"></script>
+</body>
+</html>
